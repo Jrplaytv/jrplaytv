@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JR Play TV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container" id="login">
+    <img src="assets/logo.png" alt="Logo JRPLAY" class="logo">
+    <h2>Conectar-se</h2>
+    <input type="text" id="server" placeholder="Servidor (ex: http://exemplo.com)">
+    <input type="text" id="user" placeholder="Usuário">
+    <input type="password" id="pass" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+    <div id="loading" class="hidden">Carregando lista...</div>
+  </div>
+
+  <div class="app-container hidden" id="app">
+    <header>
+      <img src="assets/logo.png" class="header-logo" alt="Logo">
+      <input type="text" id="search" placeholder="Buscar canais..." oninput="filterChannels()">
+    </header>
+    <main>
+      <aside id="channel-list"></aside>
+      <section class="player-section">
+        <video id="videoPlayer" controls autoplay></video>
+      </section>
+    </main>
+    <footer>
+      JR Play TV &copy; 2025 - Desenvolvido para uso pessoal
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

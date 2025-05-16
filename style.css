@@ -1,0 +1,92 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+}
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+.login-container input, .login-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+.login-container button {
+  background-color: #1e88e5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login-container .logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+#loading {
+  margin-top: 10px;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #1f1f1f;
+}
+.header-logo {
+  width: 120px;
+}
+main {
+  display: flex;
+  flex: 1;
+}
+aside {
+  width: 300px;
+  overflow-y: auto;
+  background-color: #1a1a1a;
+  padding: 10px;
+}
+.player-section {
+  flex: 1;
+  padding: 10px;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.channel-card {
+  background: #2a2a2a;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.channel-card:hover {
+  background: #3a3a3a;
+}
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+  }
+}
